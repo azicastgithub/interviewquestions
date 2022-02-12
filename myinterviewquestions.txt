@@ -779,4 +779,11 @@ A preppared developer has more chance of getting success than a unprepared super
 	   Works hand in hand with SRP.
 
 	5. DIP Dependency Inversion Principle
-		
+	   According to the dependency inversion principle, classes should only 
+	   depend on contracts, meaning interfaces or abstract classed rather than
+         concrete implementations. This is very closely related to open/close principle
+
+84. What is delegates ?
+
+	[https://www.youtube.com/watch?v=ifbYA8hyvjc&t=2s]
+      The main use of delegate is communication bewteen two parties via callbacks   
