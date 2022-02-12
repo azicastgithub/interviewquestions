@@ -1,0 +1,750 @@
+A preppared developer has more chance of getting success than a unprepared super hero.
+
+1. What is the difference between Custom control and User Control ?
+
+	Create a custom control if you want to make a component where you have 
+      full control over its visual appearance, and you don't want any baggage of unnecessary functionality. 
+      Typical cases would be simple controls with limited functionality (such as a button)
+
+      Create a user control if you are going to combine existing controls into 
+	reusable building blocks (such as two lists with buttons where you can move items between the lists).
+
+2. What is dotnet ?
+	.NET is a free, open-source, and cross-platform for building modern, scalable, and high-performance desktop, web, cloud, and mobile applications. 
+	The current version of .NET is .NET 5.0, which is the successor of .NET Core 3.1 and .NET Framework 4.6. Prior to .NET 5.0, .NET had two versions, .NET Framework, and .NET Core, but in this version, both have merged and now there is only version.
+
+3. What is Abstract class and interfaces ?
+
+	Abstract Class
+	An abstract class is an incomplete class or special class we can't be instantiated. 
+	The purpose of an abstract class is to provide a blueprint for derived classes and set some rules what the derived classes must implement when they inherit an abstract class.
+	We can use an abstract class as a base class and all derived classes must implement abstract definitions. 
+	An abstract method must be implemented in all non-abstract classes using the override keyword. 
+	After overriding the abstract method is in the non-Abstract class. 
+	We can derive this class in another class and again we can override the same abstract method with it.
+
+	Abstract Class Features
+	1. An abstract class can inherit from a class and one or more interfaces.
+	2. An abstract class can implement code with non-Abstract methods.
+	3. An Abstract class can have modifiers for methods, properties etc.
+	4. An Abstract class can have constants and fields.
+	5. An abstract class can implement a property.
+	6. An abstract class can have constructors or destructors.
+	7. An abstract class cannot be inherited from by structures.
+	8. An abstract class cannot support multiple inheritance.
+
+	Interfaces
+	An interface looks like a class, but has no implementation. 
+	The only thing it contains are declarations of events, indexers, methods and/or properties. 
+	The reason interfaces only provide declarations is because they are inherited by structs and classes, that must provide an implementation for each interface member declared.
+	They're great for putting together plug-n-play like architectures where components can be interchanged at will.
+	Since all interchangeable components implement the same interface, they can be used without any extra programming. 
+	The interface forces each component to expose specific public members that will be used in a certain way.
+
+4. What is Query ?
+	A query is a question or inquiry about a set of data. 
+
+5. How many constructor types are there in C# ?
+	A constructor is a special method that is used to initialize an object. A constructor is invoked at the time of an object creation. 
+	Constructor name must be the same as its class name. 
+	A constructor must have no explicit return type.
+
+	Default constructor
+	Parameterized constructor
+	Copy constructor
+	Static constructor
+	Private constructor
+
+6. What is Indexing in SQL server ?
+
+	A SQL index is a quick lookup table for finding records users need to search frequently. 
+	An index is small, fast, and optimized for quick lookups. 
+	It is very useful for connecting the relational tables and searching large tables
+	
+7. What are Joins ?
+
+	(INNER) JOIN: Returns records that have matching values in both tables
+	LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records from the right table
+	RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table
+	FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table
+
+8. What are the differences between Primary Key and Unique Key ?
+
+	Primary Key.
+	A primary key is a column of table which uniquely identifies each tuple (row) in that table. 
+	Primary key enforces integrity constraints to the table. Only one primary key is allowed to use in a table. 
+	The primary key does not accept any duplicate and NULL values. 
+	The primary key value in a table changes very rarely so it is chosen with care where the changes can occur in a seldom manner. 
+	A primary key of one table can be referenced by foreign key of another table. 
+	
+	Unique Key.
+	Unique key constraints also identifies an individual tuple uniquely in a relation or table. 
+	A table can have more than one unique key unlike primary key. 
+	Unique key constraints can accept only one NULL value for column. 
+	Unique constraints are also referenced by the foreign key of another table. 
+	It can be used when someone wants to enforce unique constraints on a column and a group of columns which is not a primary key. 
+
+	Unique keys can have nulls but primary keys cannot have nulls.
+	
+	We can create multiple unique keys on a table we can have only one primary key on a table
+
+	Unique key creates a non-clustered index by default, primary key create a clustered index by default
+
+9. What is Boxing and UnBoxing ?
+
+	Boxing
+	The process of Converting a Value Type (char, int etc.) to a Reference Type(object) is called Boxing.
+	Boxing is implicit conversion process in which object type (super type) is used.
+	The Value type is always stored in Stack. The Referenced Type is stored in Heap
+
+	Unboxing
+	The process of converting reference type into the value type is known as Unboxing.
+	It is explicit conversion process.
+
+10. Difference between String and string builder ?
+	StringBuilder is used to represent a mutable string of characters. 
+	Mutable means the string which can be changed. 
+	So String objects are immutable but StringBuilder is the mutable string type. 
+	It will not create a new modified instance of the current string object but do the modifications in the existing string object. 
+	The complete functionality of StringBuilder is provided by StringBuilder class which is present in System.Text namespace.
+
+	As stated above that the String class objects are immutable which means that if the user will modify any string object it will result into the creation of a new string object. 
+	It makes the use of string costly. 
+	So when the user needs the repetitive operations on the string then the need of StringBuilder come into existence. 
+	It provides the optimized way to deal with the repetitive and multiple string manipulation operations.
+
+11. What is a Cursor in SQL Server ?
+	A SQL cursor is a database object that retrieves data from result sets one row at a time. 
+	The cursor in SQL can be used when the data needs to be updated row by row. 
+	A SQL cursor is a database object that is used to retrieve data from a result set one row at a time.
+
+12. What is a Subquery ?
+	A Subquery or Inner query or a Nested query is a query within another SQL query and embedded within the WHERE clause.
+	A subquery is used to return data that will be used in the main query as a condition to further restrict the data to be retrieved.
+	Subqueries can be used with the SELECT, INSERT, UPDATE, and DELETE statements along with the operators like =, <, >, >=, <=, IN, BETWEEN, etc.
+
+13. What is LINQ ?
+	LINQ (Language Integrated Query) is uniform query syntax in C# and VB.NET to retrieve data from different sources and formats. 
+	It is integrated in C# or VB, thereby eliminating the mismatch between programming languages and databases, as well as providing a single querying interface for different types of data sources.
+	LINQ queries return results as objects.
+	It enables you to uses object-oriented approach on the result set and not to worry about transforming different formats of results into objects.
+
+14. What is Interfaces ?
+	Interface in C# is a blueprint of a class. 
+	It is like abstract class because all the methods which are declared inside the interface are abstract methods. 
+	It cannot have method body and cannot be instantiated. 
+	It is used to achieve multiple inheritance which can't be achieved by class.
+
+15. What is Caching ?
+	Caching is used to improve the performance in ASP.NET MVC. 
+	Caching is a technique which stores something in memory that is being used frequently to provide better performance. 
+	In ASP.NET MVC, OutputCache attribute is used for applying Caching. 
+	OutputCheching will store the output of a Controller in memory and if any other request comes for the same, it will return it from cache result.
+
+16. What is the Difference between const and readonly ?
+	Const fields has to be initialized while declaration only, while readonly fields can be initialized at declaration or in the constructor.
+	Const variables can declared in methods ,while readonly fields cannot be declared in methods.
+	Const fields cannot be used with static modifier, while readonly fields can be used with static modifier.
+	A const field is a compile-time constant, the readonly field can be used for run time constants.
+
+17. What are the ways to optimize sql server stored procedures ?
+
+	1. Use SET NOCOUNT ON
+
+		SQL Server returns informational messages when running select or DML operations.
+		In case a procedure has many such statements a cursor or a while loop SQL Server will display lot of such messages increasing network traffic. 
+		These messages can be suppressed with SET NOCOUNT ON and can increase performance by decreasing network traffic.
+
+	2. Use fully qualified procedure name
+
+		A fully qualified object name is database.schema.objectname. 
+		When stored procedure is called as schemaname.procedurename, SQL Server can swiftly find the compiled plan instead of looking for procedure in other schemas when schemaname is not specified. 
+		This may not be a great boost to the performance but should be followed as best practice. 
+		All objects inside procedure should also be referred as schemaname.objectname.
+
+	3. sp_executesql instead of Execute for dynamic queries
+
+		The sp_executesql allows for cache plan reuse and protects from SQL Injection. 
+		Let’s see an example of the plan reuse.
+
+	4. Using IF EXISTS AND SELECT
+		
+		IF EXISTS is used to check existence of a record, object etc.. 
+		And is a handy statement to improve performance of queries where in one only wants to check existence of a record in a table instead of using that record/row in the query.
+		When doing so use IF EXISTS(SELECT 1 from mytable) instead of IF EXISTS(Select * from mytable) as only thing we are interested in is to check the presence of record/s. 
+		So, if the query return 1 then record is present else it’s not. 
+		It’s needless to return all column values.
+
+	5. Avoid naming user stored procedure as sp_procedurename.
+		
+		If a stored procedure begins with sp_ then SQL Server first searches it in master database and then in the current user database. 
+		This might cause slight performance issues and moreover it may result in wrong results if a stored procedure with same name exists in master database.
+
+	6. Use set based queries wherever possible.
+
+		T-SQL is a set based language and thus loops don’t work well in here. 
+		Cursors and while loop are to be used only when a set based query is either expensive or can’t be formulated.
+
+	7. Keep transaction short and crisp
+		
+		The longer the transaction the longer the locks will be held based on isolation level. 
+		This may result in deadlocks and blocking.
+
+18. What is Indexing in SQL Server ?
+
+	SQL Server supports two types of indexes:
+		Clustered Index
+		Non-Clusterd Index.	
+		
+	Both Clustered and Non-clustered Indexes have Balance Tree Structure.
+	1. Clustered Index
+
+		A B-Tree (computed) clustered index is the index that will arrange the rows physically in the memory in sorted order.
+		An advantage of a clustered index is that searching for a range of values will be fast. 
+		A clustered index is internally maintained using a B-Tree data structure leaf node of btree of clustered index will contain the table data; you can create only one clustered index for a table.
+		Leaf nodes of Clustered Index points to the actual data.
+	
+	2. Non-clustered Index
+
+		A non-clustered index is an index that will not arrange the rows physically in the memory in sorted order.
+		An advantage of a non-clustered index is searching for the values that are in a range will be fast.
+		You can create a maximum of 999 non-clustered indexes on a table, which is 254 up to SQL Server 2005.
+		A non-clustered index is also maintained in a B-Tree data structure but leaf nodes of a B-Tree of non-clustered index contains the pointers to the pages that contain the table data and not the table data directly.
+		Leaf nodes of non-clustered index points towards the clustered index
+
+19. Difference between TinyInt and smallInt
+
+	TinyInt
+	1. Storage size is 1 byte
+	2. Minumum value that can be stored is 0.
+	3. Maximum value that can be stored is 255.
+	4. Cannot Store negative value.
+
+	SmallInt
+	1. Storage size is 2 bytes
+	2. Minumum value that can be stored is -32,768.
+	3. Maximum value that can be stored is 32,767.
+	4. Can store negative values.
+
+20. What is Delete,Drop and Turncate ?
+
+	DELETE
+	Basically, it is a Data Manipulation Language Command (DML). 
+	It is used to delete one or more tuples of a table.
+	With the help of the “DELETE” command, we can either delete all the rows in one go or can delete rows one by one. i.e., we can use it as per the requirement or the condition using the Where clause. 
+	It is comparatively slower than the TRUNCATE command. 
+	The TRUNCATE command does not remove the structure of the table.
+
+	DROP
+	It is a Data Definition Language Command (DDL). 
+	It is used to drop the whole table. 
+	With the help of the “DROP” command we can drop (delete) the whole structure in one go i.e. it removes the named elements of the schema. 
+	By using this command the existence of the whole table is finished or say lost. 
+
+	TRUNCATE
+	It is also a Data Definition Language Command (DDL). 
+	It is used to delete all the rows of a relation (table) in one go. 
+	With the help of the “TRUNCATE” command, we can’t delete the single row as here WHERE clause is not used. 
+	By using this command the existence of all the rows of the table is lost. It is comparatively faster than the delete command as it deletes all the rows fastly. 
+
+21. What is the difference between Function,StoreProcedure and Trigger ?
+
+	STORED PROCEDURE
+	1. Can have both input / output parameters
+	2. Stored procedure can’t call from the functions
+	3. It’s optional to return the value, as somestimes it returns 0 or n values
+	4. It allows insert/update/delete/select
+	5. Procedures cant be utilized in a select statement
+	6. Procedure cannot be used in SQL statements with WHERE/HAVING/SELECT
+	7. Exception can be handled by try-catch block
+
+	FUNCTIONS
+	1. Can have only input parameters
+	2. Functions can call from the stored procedures
+	3. It’s should return the value
+	4. It allows only select statement
+	5. Function can be embedded in a select statement
+	6. SQL statements can be used with WHERE/HAVING/SELECT
+	7. Here, we cannot handle the exception, using try-catch block
+
+	TRIGGER
+	1. Trigger is a stored procedure that runs automatically when various events happen (eg update, insert, delete)
+	2. It can execute automatically based on the events 
+	3. It can not take input as parameter 
+	4. We can't use transaction statements inside a trigger
+	5. Triggers can not return values 
+
+22. What is magic table ?
+
+	Magic tables are the temporary logical tables that are created by the SQL server whenever there are insertion or deletion or update( D.M.L)  operations. 
+	The recently performed operation on the rows gets stored in magic tables automatically. 
+	These are not physical table but they are just temporary internal tables. 
+	These magic tables can’t be retrieved directly, we need to use triggers to access these magic tables to get the deleted and inserted rows.
+
+23. What is temporaty table ?
+	
+	Temporary Tables are most likely as Permanent Tables. 
+	Temporary Tables are Created in TempDB and are automatically deleted as soon as the last connection is terminated. 
+	Temporary Tables helps us to store and process intermediate results. 
+	Temporary tables are very useful when we need to store temporary data
+
+	LOCAL TEMPORARY TABLE
+	A Local Temp Table is available only for the session that has created it. 
+	It is automatically dropped (deleted) when the connection that has created it, is closed. 
+	To create Local Temporary Table Single “#” is used as the prefix of a table name.
+	Also, the user can drop this temporary table by using the “DROP TABLE #EmpDetails” query. 
+	There will be Random Numbers are appended to the Name of Table Name. 
+	If the Temporary Table is created inside the stored procedure, it get dropped automatically upon the completion of stored procedure execution.
+
+	GLOBAL TEMPORARY TABLE
+	Global Temporary Tables are visible to all connections and Dropped when the last connection referencing the table is closed. 
+	Global Table Name must have an Unique Table Name. 
+	There will be no random Numbers suffixed at the end of the Table Name.
+
+24. What is routing ?
+	
+	ASP.NET MVC routing is a pattern matching system that is responsible for mapping incoming browser requests to specified MVC controller actions.
+	When the ASP.NET MVC application launches then the application registers one or more patterns with the framework's route table to tell the routing engine what to do with any requests that matches those patterns. 
+	When the routing engine receives a request at runtime, it matches that request's URL against the URL patterns registered with it and gives the response according to a pattern match
+
+25. What is partial VIews ?
+
+	Partial view in ASP.NET MVC is special view which renders a portion of view content. 
+	It is just like a user control of a web form application. 
+	Partial can be reusable in multiple views. 
+	It helps us to reduce code duplication. 
+	In other word a partial view enables us to render a view within the parent view.
+
+	A partial view is a chunk of HTML that can be safely inserted into an existing DOM. Most commonly, partial views are used to 
+	componentize Razor views and make them easier to build and update.
+
+26. What is render View ?
+	
+	Rendering a view means showing up a View eg html part to user or browser. 
+	Let's say you have a controller for About page of your site, now from your controller you would render the About view which means show the that page in browser for users to see otherwise if you don't users will see just blank page
+
+27. What are database View in sql server ?
+	
+	A VIEW in SQL Server is like a virtual table that contains data from one or multiple tables. 
+	It does not hold any data and does not exist physically in the database. 
+	Similar to a SQL table, the view name should be unique in a database. 
+	It contains a set of predefined SQL queries to fetch data from the database. 
+	It can contain database tables from single or multiple databases as well.
+
+28. What is Finalize method in .net ?
+
+	Finalize method also called destructor to the class. 
+	Finalize method can not be called explicitly in the code. 
+	Only Garbage collector can call the the Finalize when object become inaccessible. 
+	Finalize method cannot be implemented directly it can only be implement via declaring destructor
+
+29. What is WebConfig ?
+
+	web.config file is a xml based configuration file used in ASP.NET based application to manage various settings that concerned with configuration of our website. 
+	In this way we can separate our application logic from configuration logic. 
+	And the main benefit of this is, if we want to change some configuration settings then we do not need to restart our application to apply new changes, ASP.NET automatically detects the changes and applies them to the running ASP.NET application.
+
+30. How you manage system log ?
+
+31. Error logger ?
+
+32. Sql server error management ?
+
+33. Authorization and authentication ?
+
+34. What is Polymorphism ?
+
+	Polymorphism provides the ability to a class to have multiple implementations with the same name. 
+	It is one of the core principles of Object Oriented Programming after encapsulation and inheritance
+
+	There are two types of polymorphism in C#:
+	Static / Compile Time Polymorphism.
+	It is also known as Early Binding. 
+	Method overloading is an example of Static Polymorphism. 
+	In overloading, the method / function has a same name but different signatures. 
+	It is also known as Compile Time Polymorphism because the decision of which method is to be called is made at compile time. 
+	Overloading is the concept in which method names are the same with a different set of parameters.
+	
+	Dynamic / Runtime Polymorphism.
+
+	Dynamic / runtime polymorphism is also known as late binding.
+	Here, the method name and the method signature (number of parameters and parameter type must be the same and may have a different implementation). 
+	Method overriding is an example of dynamic polymorphism. Method overriding can only achieve if the specified method in the parent abstract class have the 
+	'virtual' keyword.
+
+
+35. What is an Area in ASP.NET MVC ?
+
+	The large ASP.NET MVC application includes many controllers, views, and model classes. 
+	So it can be difficult to maintain it with the default ASP.NET MVC project structure. 
+	ASP.NET MVC introduced a new feature called Area for this. 
+	Area allows us to partition the large application into smaller units where each unit contains a separate MVC folder structure, same as the default MVC folder structure. 
+	For example, a large enterprise application may have different modules like admin, finance, HR, marketing, etc. 
+	So an Area can contain a separate MVC folder structure for all these modules
+
+36. What is middle layer in C# ?
+
+	In a traditional three-tiered approach to software development the middle tier, or business object layer as it is sometimes referred to, is the layer of architecture that models and enforces the business rules and/or data of an organization. 
+	A properly designed middle tier should express itself in a highly readable form, be robust, be resilient to change, and be distinct from the user interface. 
+	Generally, component-based architectures that can express the business rules and processes, as well as scale to meet demand, work well for creating middle-tier architecture. 
+	Enter .NET.
+
+37. How much number of parameters can be passed into a function ?
+
+	To be precise 32 parameters.....IL has the limitation
+
+38. How to acheive joining with LINQ and dataset ?
+
+	The joining operators joins the two sequences (collections) and produce a result.
+	
+	The Join operator operates on two collections, inner collection & outer collection. 
+	It returns a new collection that contains elements from both the collections which satisfies specified expression. 
+	It is the same as inner join of SQL.
+	
+
+39. What is the difference between Data Dictionary and List ?
+
+	Both lists and dictionaries belong to Generics collections that is used to store collections of data. 
+	Both Dictionary <TKey, TValue> and List <T> are similar both have random access data structures on top of the .NET framework. 
+	The Dictionary is based on a hash table that means it uses a hash lookup, which is an efficient algorithm to look up things, on the other hand, a list, has to go and check element by element until it finds the result from the beginning
+
+	The Dictionary uses the hashing algorithm to search for the element (data). 
+	A Dictionary first calculates a hash value for the key and this hash value leads to the target data bucket. 
+	After that, each element in the bucket needs to be checked for equality. But actually, the list will be faster than the dictionary on the first item search because nothing to search in the first step. 
+	But in the second step, the list has to look through the first item and then the second item. 
+	So each step of the lookup takes more and more time. 
+	The larger the list, the longer it takes. 
+	Of course, the Dictionary in principle has a faster lookup with O(1) while the lookup performance of a List is an O(n) operation.
+
+	The Dictionary maps a key to a value and cannot have duplicate keys, whereas a list just contains a collection of values. 
+	Also, Lists allow duplicate items and support linear traversal.
+
+	When you add data to a Dictionary, you should specify a unique key to the data so that it can be uniquely identified.
+
+	A Dictionary has a unique identifier, so whenever you look up a value in a Dictionary, the runtime must compute a hash code from the key. 
+	This optimized algorithm is implemented by some low-level bit shifting or modulo divisions. 
+	We determine the point at which Dictionary becomes more efficient for lookups than List.
+
+
+40. Difference betweeen Var and Dynamic 
+
+	VAR
+	Var determines things during compile time. Its statically typed.
+
+	DYNAMIC
+	Dynamic determines type during the runtime. Its dynamically typed.
+
+41. Difference between Throw and Throw ex
+
+	Throw
+	Throw always propagates the stack trace. And you could always have a good idea of the origin of the error.
+
+	Throw Ex
+	Throw Ex always resets the stack trace. And you could hide the completed details of stact trace from the end user.
+
+42. In parent child relationship which constructor will fire first ?
+
+	Contructor:
+	The contructor inside the parent class gets fired first and then only the child's construct gets fired.
+
+	Initializer
+	But as with Initializers its the opposite happening.i.e the initializers inside the child gets fired first and then
+	only the initializers inside the parent gets fired.
+
+43. Does session use Cookies ?
+	
+	
+44. Difference between 'out' and 'ref' ?
+
+	'ref' and 'out' are keywords that helps to pass variables
+
+	By Ref
+	In Ref the data is passed from caller to callee and also passes the address and the manipulated data is passed back. Two way process.
+	
+
+	Out
+	Only passes the data by reference from caller to callee and only the manipulated data goes back to the caller. Oneway process.
+	Any kind of data send from Caller to Callee would be discarded.
+
+45. Difference between 'String' and string 
+
+	Basically there is no difference 'string' is an alias with the capital 'String'
+
+46. Difference between 'Abstraction' and 'Encapsulation'
+
+	Abstraction
+	Abstraction is show only what is neccessary or in minimum . Abstraction is a modeling or thought process.
+
+	Encapsulation
+	Bringing down complexity. Implementation of Abstraction. Hiding the details.
+
+47. What is the use of private constructor ?
+
+	A class with a private constructor cannot be inherited.
+	We cannot create an object of the class which has private constructor
+
+48. What is ASP.NET MVC life cycle ? 
+
+	Basically a page life cycle involves five stages
+
+	1. App Initialization
+	2. Routing
+	3. Instantiate and execute controller
+	and once you have instantiate the controller you have to 
+	4. Locate and invoke the controller action and then
+	5. Instantiate and render the view.
+ 
+
+
+	Any web application has two main execution steps, first understanding the request and depending on the type of the request sending out an appropriate response. MVC application life cycle is not different it has two main phases, first creating the request object and second sending our response to the browser.
+
+	Creating the request object,
+
+	The request object creation has four major steps. The following is a detailed explanation of the same.
+
+	Step 1 - Fill route
+
+	MVC requests are mapped to route tables which in turn specify which controller and action to be invoked. So if the request is the first request the first thing is to fill the rout table with routes collection. This filling of the route table happens the global.asax file
+
+	Step 2 - Fetch route
+
+	Depending on the URL sent “UrlRoutingModule” searches the route table to create “RouteData” object which has the details of which controller and action to invoke.
+
+	Step 3 - Request context created
+
+	The “RouteData” object is used to create the “RequestContext” object.
+
+	Step 4 - Controller instance created 
+
+	This request object is sent to “MvcHandler” instance to create the controller class instance. Once the controller class object is created it calls the “Execute” method of the controller class.
+
+	Creating a Response object
+
+	This phase has two steps executing the action and finally sending the response as a result to the view.
+
+49. What are some types of routing ?
+
+50. Solid principles in C# ?
+
+51. What is ViewData, ViewBag and TempData ?
+
+	ViewData
+	ViewData is used to pass data from controller to view.
+	It is available for the current request only.
+	Requires typecasting for complex data type and checks for null values to avoid error.
+	If redirection occurs, then its value becomes null.
+
+	ViewBag.
+	ViewBag is also used to pass data from the controller to respective view.
+	It is also available for the current request only.
+	Doesn't require typecasting for the complex data type.
+	If redirection occurs, then its value becomes null.
+
+	TempData
+	TempData is used to transfer data from view to controller, controller to view, or from one action method to another action method 
+	of the same or a different controller.
+	TempData stores the data temporarily and automatically removes it after retrieving a value.
+	
+
+52. What is delegets ? explain ?
+
+	
+
+51. What is Web API ?
+
+	Web API is a framework which helps to create and develop HTTP based restful services.
+
+52. Why is Web API required ?
+
+53. Is it possible to use RESTful services using WCF ?
+
+	Yes, we can still develop RESTful services with WCF. However, there are two main reasons that prompt users to use Web 
+    API istead of RESTful services. Web API increase TDD(Test Data Driven) approach in the development of RESTful services.
+    If you want to develop RESTful services out of WCF you need to deal with a lot of complicated config settings, URI templates,
+    contracts & endpoints for developing 
+
+54. What are filters ?
+
+	Sometimes we want to execute some logic either before the execution of the action method or after the execution. We can use Action
+	filter for such kind of scenarios. Filters define the logic which is executed before or after the execution of the action method.
+	Action Filters are attributes which we can apply to the action methods.
+
+	Sometype of filters are
+	Authorization filters that implements IAthorisation filters
+	Action filters, Result filters and Exception filters as well
+
+55. What is the use of View Model in MVC ?
+
+	ViewModel is the plain class with properties, which is used to bind it to a strongly-
+	typed view. ViewModel can have the validation rules defined for its properties using
+	data annotatioṇ.
+
+56. What is the Database first appropach in MVC using Entity Framework ?
+
+	Database first approach is an alternative or substitutes to the Code first and model first approaches to the Entity data Model.
+	The Entity Data Model creates model codes (classed, properties, DbContext, etc) from the database in the project and that class
+	behaves as the link between database and the controller.
+
+	So approaches being used are Database First approach, Code First and Model First
+
+57. What do you mean by MVC scaffolding ?
+
+	Scaffolding is a code generation framework for ASP.NET web applications. Visual Studio inclues pre-installed code generators
+	for MVC and Web API projects.
+	Using scaffolding you could reduce the amount of time that is used develop standard database operations in our projects.
+	It consits of Page Templates,Entity Templates, Field Templates and Filter templates as well. These templates are called
+	scaffold templates and they allow you to quickly build and data driven function website.
+
+58. Explain the concept of Razor in ASP.NET MVC ?
+
+	ASP.NET MVC has always supported the concept of view engines - which are the pluggable modules that implement different template
+	syntax options. The "default" view engine for ASP.NET MVC uses the same .aspx/.ascx/. master file templates as ASP.NET WebForms. 
+	Other popular ASP.NET MVC view engines are Spart & Nhaml. Razor is the new view-engine introduced by MVC 3.
+	
+59. Default route in MVC ?
+
+	URL : "{controller}/{action}/{id}"
+
+60. What is GET and POST Action types ?
+
+	GET Action Type:
+	Get is used to request data from a specified resource. With all the GET requests, we pass the 
+	URL, which is compulsory; however, it can take up the following overlaods.
+
+	POST Action Type:
+	The Post is used to submit data to be processed to a specified recource. With all the POST requests,
+	we pass the URL, which is essential and the data. However, it can take up the following 
+	overloads.
+
+61. Which Filters are executed in the end ?
+
+    Exception filters are executed in the end why bcz 
+
+62. Mention the benefits of Area in MVC ?
+
+	It allows us to organize models, views and controllers into separate
+    functional sections of the application, such as administration, billing, customer support and 
+    much more.
+    It is easy to integrate with other Areas created by another.
+    Also, easy for unit testing.
+
+63. What are the two ways for adding constraints to the route ?
+
+	Using Regular Expressions.
+	Using an object that implements IRoute Interface
+	
+64. How to implement Validation in MVC ?
+
+	We can easily implement validation in MVC application by using the validators defined in the
+	System.ComponentModel.DataAnnotations namespace.
+	Different types of validators are required, datatype, range and string length.
+
+65. Mention 2 instances where routing is not implemented or required ?
+
+	When a physical file is found that matches the URL pattern.
+	And When routing is disabled for a URL Pattern.
+
+66. What is the use of Peek and Keep in TempData ?
+
+	Once "TempData" is read in teh current request. It is not available in the subsequent
+	request. If we want "TempData" to be read and also vailable in the subsequent request
+	then after reading we need to call "Keep" 
+
+67. What is connection Pools ?
+
+	Connection pooling allows you to reuse connections rather than create a new one every time the 
+	ADO.NET data provider needs to establish a connection to the underlying database
+
+68. What is Referrencial Integr ?
+
+69. What is Normalization ?
+
+	Normalization is a database design technique to remove redundant data.
+	Normalization is implemented by splitting tables into two one with reference data(master table) and the other transaction data.
+
+70. What is Denormalization ?
+
+	Denormalization is a database design technique to improve search performance. 
+	We merge tables. Duplicate data is present in denormalization.
+
+71. Explain OLTP vs OLAP ?
+
+	OLTP : - Online Transaction Processing.
+	Normalization avoids redundancy and we follow normalization desing(1st, 2nd and 3rd normal)
+
+	OLAP : - Online Analytical Processing.
+	Denormalization improve search performance and we follow denormalization design.
+
+72. Types of Normilization
+	
+	1st Normal form
+	A table is in first normal form when the colums have ATOMIC VALUES.
+	It should not have repeating groups.
+
+	2nd Normal form
+	First normal form should be satisfied. 
+	All non-key columns should be fully dependent on the primary key.
+
+	3rd Normal form
+	All 1st and 2nd normal form should be satisfied. 
+	No transient dependency should be present
+	
+	Remeber the acronym 'APT'
+	A - Atomic values
+	P - Should not have partial dependency on primary keys
+	T - Should not have Transient dependency.
+
+73. Differentiate between char vs varchar ?
+
+	Char is always fixed length and varchar is always variable length.
+	Or in other word it can vary in its size dependenting on the data it contains.
+
+74. Differentiate between Char vs NChar ?
+
+	Char can only store english characters its a non-uniquecode datatype. 
+	And Char will take 1 byte.
+	NChar can store non-english characters like Chinese, Hindi and Malayalam.
+	NChar will take 2 bytes.
+
+75. What is the use of Index in SQL Server ?
+
+	Indexes helps you to increase the search performance
+
+76. What is the need of identity specification ?
+
+	Identity helps to define auto-incremented column. 
+
+77. What are transactions and how to implement it ?
+
+	Transaction helps to implement series of activity or treat it as one single unit.
+	Either everything is successful or everything rollbacks.
+
+78. What is an extension method ?
+	
+	Help you to add new methods to existing types without modifying the original code,inderiting or aggregating.
+
+79. What are Generics in C# ?
+
+80. What is arraylist ?
+
+	Arraylist are resizable. They take objects as collection elements so there is lot of boxing and unboxing.
+
+81. What is IOC( Inversion of control)
+	
+	IOC is a programming technique where the unconcerned LOGIC is delegated to some other entity.
+	[https://www.facebook.com/video.php?v=690253231015623]
+
+82. What are generic collections ?
+
+	Generic type helps us to create flex strong type collection easy.
+	[https://www.youtube.com/watch?v=7bKhAJpY9ho&t=12s]
+
+83. What is SOLID PRINCIPLES ?
+
+	Solid principles consit of 5 priciples below
+
+	1. SRP Single Responsibility Principle
+	2. OCP Open Cloased Principle
+	3. LSP Liskov Substitution Principle
+	4. ISP Interface Segregation Principle
+	5. DIP Dependency Inversion Principle
