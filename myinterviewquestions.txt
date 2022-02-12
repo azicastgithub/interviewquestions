@@ -740,11 +740,43 @@ A preppared developer has more chance of getting success than a unprepared super
 	[https://www.youtube.com/watch?v=7bKhAJpY9ho&t=12s]
 
 83. What is SOLID PRINCIPLES ?
+	
+	[https://www.youtube.com/watch?v=9qvCeRt9_hM]
+
+	Solid design principles are arguably the most popular design principles for oops software development
 
 	Solid principles consit of 5 priciples below
 
 	1. SRP Single Responsibility Principle
-	2. OCP Open Cloased Principle
+	   A class should have only one responsibility, hence only a single purpose.
+	   Benefits
+	   Easier to understand.
+	   Easier to maintain.
+	   Changed less frequent.
+	   Easily and thoroughly testable.
+	
+	2. OCP Open/Closed Principle
+	   A class should be open for extension but closed for modification
+	   Benefits		
+	    	Not allowing modification provides the advantage of not 
+		introducing bugs.
+		All dependent classes will not need to adapt
+
 	3. LSP Liskov Substitution Principle
+	   A subclass should be sustitutable by its base class without having any
+	   negative impact to the caller
+	   Benefits of LSP:
+	   Callers does not get surprising behavior when substitution applies.	   
+	   Complex bug which might arise due to conflicting behavior between
+         inheritance is avoided easily.	
+			
 	4. ISP Interface Segregation Principle
+	   The Interface Segregation Principle is all about separating intergaces.
+	   Basically multiple specific interfaces are better than generic single interface
+	   are better than generic single interface.
+         Benefits of ISP.
+	   Same as SRP, easier to manage and maintain.
+	   Works hand in hand with SRP.
+
 	5. DIP Dependency Inversion Principle
+		
