@@ -796,6 +796,18 @@ A preppared developer has more chance of getting success than a unprepared super
 
 85. What are the differences between REST and SOAP APIs ?
 
+	[https://www.youtube.com/watch?v=_fq8Ye8kodA] Duration[12:12] 
+
+	SOAP APIs
+	SOAP stands for Simple Object Access Protocol.
+	Is a messaging protocol specification for exchanging structured information in the implementation of web services.
+
+	REST API
+	REST stands for Representational Stage Transfer.
+	Is an application programming interface that conforms to the contraints of REST architectural style and allows for interaction
+	with RESTful web services. It uses the normal HTTP verbs like 'GET', 'POST', 'PUT' and 'DELETE' for working with the required 
+      components.
+
 86. Explain Web API life cycle ?
 
 87. What are some HTTP words ?
@@ -822,5 +834,23 @@ A preppared developer has more chance of getting success than a unprepared super
 
 93. What is POST, GET, PUT, DELETE and PATCH ?
 
+	These are called HTTP verbs.
+	POST - Always add a new resource.
+	PUT - Update a resource and its a full update
+	PATCH - Customized Updates.
+
 	[https://www.youtube.com/watch?v=1xVK2m817Bw&t=37s] Duration[23:42]
 
+94. What is object Serialization and deSerialization ?
+
+	Serialization is the process of converting an object into a stream of bytes to store
+	the object or transmit it to memory, a database, or file. Its main purpose is to save the 
+	state of an object in order to be able to recreate it when needed. The reverse process is 
+      called deserialization.
+
+	Part 1
+	[https://www.youtube.com/watch?v=WHKPcA_xvE0] Duration[9:59]
+
+	Part 2
+	[https://www.youtube.com/watch?v=M8VeTHB08ao] Duration[6:25]
+	
