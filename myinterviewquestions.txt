@@ -124,10 +124,13 @@ A preppared developer has more chance of getting success than a unprepared super
 	Subqueries can be used with the SELECT, INSERT, UPDATE, and DELETE statements along with the operators like =, <, >, >=, <=, IN, BETWEEN, etc.
 
 13. What is LINQ ?
-	LINQ (Language Integrated Query) is uniform query syntax in C# and VB.NET to retrieve data from different sources and formats. 
-	It is integrated in C# or VB, thereby eliminating the mismatch between programming languages and databases, as well as providing a single querying interface for different types of data sources.
-	LINQ queries return results as objects.
-	It enables you to uses object-oriented approach on the result set and not to worry about transforming different formats of results into objects.
+
+	[https://www.youtube.com/watch?v=Kn_clV8mVOM]
+	LINQ is a uniform programming model for any kind of data access. LINQ enables you to query and manipulate
+      data independently of data sources.
+	Its like a quey language which can query any data source and any transform. LINQ also provides full type
+	safety and compile time checking.
+      LINQ can server as a good entity for middle tier. So it will sit in between the UI and data access layer.
 
 14. What is Interfaces ?
 	Interface in C# is a blueprint of a class. 
@@ -142,6 +145,9 @@ A preppared developer has more chance of getting success than a unprepared super
 	OutputCheching will store the output of a Controller in memory and if any other request comes for the same, it will return it from cache result.
 
 16. What is the Difference between const and readonly ?
+   
+      [https://www.youtube.com/watch?v=vNPBWNNlDwM]
+     
 	Const fields has to be initialized while declaration only, while readonly fields can be initialized at declaration or in the constructor.
 	Const variables can declared in methods ,while readonly fields cannot be declared in methods.
 	Const fields cannot be used with static modifier, while readonly fields can be used with static modifier.
@@ -787,3 +793,34 @@ A preppared developer has more chance of getting success than a unprepared super
 
 	[https://www.youtube.com/watch?v=ifbYA8hyvjc&t=2s]
       The main use of delegate is communication bewteen two parties via callbacks   
+
+85. What are the differences between REST and SOAP APIs ?
+
+86. Explain Web API life cycle ?
+
+87. What are some HTTP words ?
+
+88. What you mean by attribute routing ?
+	
+	
+
+89. Find nth highest salary in sql server | sql query to find 2nd, 3rd highest salary
+
+	[https://www.youtube.com/watch?v=ZGoXSJPNtGY] Duration[12:48]
+
+90. Explain RowNumber, Partition, Rank and DesnseRank ?
+
+	[https://www.youtube.com/watch?v=QFj-hZi8MKk] Duration[10:49]
+
+91. What is Garbage Collector ?
+
+	[https://www.youtube.com/watch?v=gC8NdlOeNEs&t=24s] Duration[9:58]
+
+92. What is IL Code, CLR, CTS and CAS ?
+
+	[https://www.youtube.com/watch?v=gaDn-sVLj8Q] Duration[9:09]
+
+93. What is POST, GET, PUT, DELETE and PATCH ?
+
+	[https://www.youtube.com/watch?v=1xVK2m817Bw&t=37s] Duration[23:42]
+
