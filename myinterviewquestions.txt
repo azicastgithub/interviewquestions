@@ -1,3 +1,17 @@
+My Introduction
+In 2003, I began my coding/programming journey. 
+Those were the days when I was working as a freelance programmer. 
+I was given a job to design an application for Video Playout Requirement for a local Cable TV broadcast at the time. 
+The need was that this application mix video clips with graphics overlays and schedule video clips on a specific date and time. 
+And I created the app in Visual Basic 6, which made it quite difficult for me to progress because there were few third-party SDKs or Activex components 
+available to make things truly workable, so I completed the project in its most basic version. 
+And in all technical sense this app still is a true windows based desktop application.
+
+In 2008, I transformed the entire Video Playout application into a C# dotnet winform app.
+And things really changed this time as there are many SDKs, 
+Activex components and other third party libraries to get it efficiently working and ofcourse feature rich.
+
+
 A preppared developer has more chance of getting success than a unprepared super hero.
 
 1. What is the difference between Custom control and User Control ?
@@ -198,7 +212,7 @@ A preppared developer has more chance of getting success than a unprepared super
 
 18. What is Indexing in SQL Server ?
 
-	SQL Server supports two types of indexes:
+	SQL Server supports two types of indexes
 		Clustered Index
 		Non-Clusterd Index.	
 		
@@ -652,7 +666,7 @@ A preppared developer has more chance of getting success than a unprepared super
 
 66. What is the use of Peek and Keep in TempData ?
 
-	Once "TempData" is read in teh current request. It is not available in the subsequent
+	Once "TempData" is read in the current request. It is not available in the subsequent
 	request. If we want "TempData" to be read and also vailable in the subsequent request
 	then after reading we need to call "Keep" 
 
@@ -661,7 +675,7 @@ A preppared developer has more chance of getting success than a unprepared super
 	Connection pooling allows you to reuse connections rather than create a new one every time the 
 	ADO.NET data provider needs to establish a connection to the underlying database
 
-68. What is Referrencial Integr ?
+68. What is Referrencial Integrity ?
 
 69. What is Normalization ?
 
@@ -731,6 +745,13 @@ A preppared developer has more chance of getting success than a unprepared super
 
 79. What are Generics in C# ?
 
+	Generic means the general form, not specific. In C#, generic means not specific to a particular data type.
+
+	C# allows you to define generic classes, interfaces, abstract classes, fields, methods, static methods, properties, events, delegates, and operators using the type parameter and without the specific data type.
+      A type parameter is a placeholder for a particular type specified when creating an instance of the generic type.
+
+	A generic type is declared by specifying a type parameter in an angle brackets after a type name, e.g. TypeName<T> where T is a type parameter.
+
 80. What is arraylist ?
 
 	Arraylist are resizable. They take objects as collection elements so there is lot of boxing and unboxing.
@@ -792,6 +813,19 @@ A preppared developer has more chance of getting success than a unprepared super
 84. What is delegates ?
 
 	[https://www.youtube.com/watch?v=ifbYA8hyvjc&t=2s]
+	
+	[https://www.youtube.com/watch?v=D2h46fvQX04] Duration[11:53]
+
+	A delegate is a type safe function pointer. That is, it holds a reference(Pointer) to a function.
+	The signature of the delegate must match the signature of the function, the delegate points to, otherwise you get a compiler error.
+	This is the reason delegates are called as type safe function pointers.
+
+	A delegate is similar to a class. You can create an instance of it and when you do so, you pass in the function name as 
+	a parameter to the delegate constructor and it is to this function the delegate will poin to.
+
+	Delegates syntax look very much similar to a method with a delegate keyword.
+	
+	Delegate are basically pointer to the function
       The main use of delegate is communication bewteen two parties via callbacks   
 
 85. What are the differences between REST and SOAP APIs ?
@@ -812,9 +846,14 @@ A preppared developer has more chance of getting success than a unprepared super
 
 87. What are some HTTP words ?
 
+	'GET', 'POST', 'PUT' and 'DELETE'
+	
 88. What you mean by attribute routing ?
 	
-	
+	MVC 5 supports a new type of routing, called attribute routing. 
+	As the name implies, attribute routing uses attributes to define routes. 
+	Attribute routing gives you more control over the URIs in your web application. 
+	The earlier style of routing, called convention-based routing, is still fully supported
 
 89. Find nth highest salary in sql server | sql query to find 2nd, 3rd highest salary
 
@@ -911,3 +950,34 @@ A preppared developer has more chance of getting success than a unprepared super
 	IEnumerable in C# is an interface that defines one method, GetEnumerator which returns an IEnumerator interface. 
 	This allows readonly access to a collection then a collection that implements IEnumerable can be used with a for-each statement
 
+99. What is Reflection ?
+
+	[https://www.youtube.com/watch?v=y8-uq6Ur7Dc] Duration[27:39]
+
+	Reflection is the ability of inspecting an assembly's metadata at runtime.Its used to find all types in an assembly and/or
+	dynamically invoke methods in an assembly.
+
+	Uses of reflection:
+	When you drag and drop a button on a winforms or in an asp.net application.
+	The properties windows uses reflection to show all the properties of the
+	button class. So reflection is extensively used by IDE or a UI designers.
+
+	Late binding can be achieved by using reflection.
+	You can use reflection to dynamically create an instance of a type,
+	about which we don't have any information at compile time.
+	So reflection enables you to use code that is not available at
+	compile time.
+
+	Consider an example where we have two alternate implementations of an interface. You want to allow the user to pick one or 
+	the other using a config file. With reflection, you can simply read the name of the class whose implementation you want 
+	to use from the config file, and instantiate an instance of that class. This is another example for late binding using reflection.
+
+100. What is a partial class ?
+
+	[https://www.youtube.com/watch?v=yNCkrtmqpW0] Duration[15:12]
+
+	Partial classes allow us to split a class into 2 or more files. All these parts are then
+	combined into a single class, when the application is compiled. The partial keyword can 
+	also be used to split a struct or an interface over two or more files.
+
+	
