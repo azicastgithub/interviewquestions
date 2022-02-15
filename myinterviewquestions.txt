@@ -828,9 +828,26 @@ A preppared developer has more chance of getting success than a unprepared super
 
 	[https://www.youtube.com/watch?v=gC8NdlOeNEs&t=24s] Duration[9:58]
 
+	Garbage collector is the feature provided by CLR which helps us to clean unused manage objects and by doing so
+	it reclaims the memory. 
+	When a .net app runs it can create several objects at any given moment of time its very much possible that it will not
+	use some of those objects. For those objects the garbage collector runs as a background thread continuausly and checks in specific 
+	interval if there are any unused manage objects. Garbage collector only cleans unused manage objects in other words it doesn't 
+	clean unmanaged objects. Anything outside the boundry of CLR is out of the control of the garbage collector checks.
+
+	Attached to the garbage collector there is this concept called generations. And there are three kinds of generations
+	generation 0, generation 1, generation 2
+
+
 92. What is IL Code, CLR, CTS and CAS ?
 
 	[https://www.youtube.com/watch?v=gaDn-sVLj8Q] Duration[9:09]
+
+	IL Code
+	Intermediate Language.
+	Its half compiled. So that during the runtime the compiler is able to figure out the operating system, hardware
+	configuration and compile an optimal code as per that environment. And it is done by JIT. And jit has various 
+	method to compile the app like per file, per method/funtion and code fragment and we cannot control this process.
 
 93. What is POST, GET, PUT, DELETE and PATCH ?
 
@@ -853,4 +870,44 @@ A preppared developer has more chance of getting success than a unprepared super
 
 	Part 2
 	[https://www.youtube.com/watch?v=M8VeTHB08ao] Duration[6:25]
+
+95. What is CTE(Common Table Expression) in SQL Server ?
+
+	[https://www.youtube.com/watch?v=BfKzryMx33M] Duration[4:28]
+
+	A Common Table Expression, also called as CTE in short form, 
+	is a temporary named result set that you can reference within a SELECT, INSERT, UPDATE, or DELETE statement. 
+	The CTE can also be used in a View.
+
+	There are two types of CTEs: Recursive and Non-Recursive
+
+	Non-Recursive CTEs
+	Non-Recursive CTEs are simple where the CTE doesn’t use any recursion, or repeated processing in of a sub-routine. 
 	
+	Re
+	Recursive CTEs are use repeated procedural loops aka recursion. 
+	The recursive query call themselves until the query satisfied the condition. 
+	In a recursive CTE we should provide a where condition to terminate the recursion.
+	
+96. What is Dataset & Datareader ?
+
+	Dataset
+	Dataset is a disconnected Architecture. In other words Dataset is an inmemory recordset.
+
+	Datareader
+	Datareader is a connected architecture.
+
+97. Static vs Singleton
+
+	[https://www.youtube.com/watch?v=csQdTkEdhME&t=939s] Duration[31:44]
+
+	Singleton is a design pattern. 
+
+98. What is the difference between IENUMERABLE and IQUERYABLE
+
+	[https://www.youtube.com/watch?v=yfPGFapabAY] Duration[13:38]
+
+	IENUMERABLE
+	IEnumerable in C# is an interface that defines one method, GetEnumerator which returns an IEnumerator interface. 
+	This allows readonly access to a collection then a collection that implements IEnumerable can be used with a for-each statement
+
