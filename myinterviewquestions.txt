@@ -1,17 +1,3 @@
-My Introduction
-In 2003, I began my coding/programming journey. 
-Those were the days when I was working as a freelance programmer. 
-I was given a job to design an application for Video Playout Requirement for a local Cable TV broadcast at the time. 
-The need was that this application mix video clips with graphics overlays and schedule video clips on a specific date and time. 
-And I created the app in Visual Basic 6, which made it quite difficult for me to progress because there were few third-party SDKs or Activex components 
-available to make things truly workable, so I completed the project in its most basic version. 
-And in all technical sense this app still is a true windows based desktop application.
-
-In 2008, I transformed the entire Video Playout application into a C# dotnet winform app.
-And things really changed this time as there are many SDKs, 
-Activex components and other third party libraries to get it efficiently working and ofcourse feature rich.
-
-
 A preppared developer has more chance of getting success than a unprepared super hero.
 
 1. What is the difference between Custom control and User Control ?
@@ -140,6 +126,7 @@ A preppared developer has more chance of getting success than a unprepared super
 13. What is LINQ ?
 
 	[https://www.youtube.com/watch?v=Kn_clV8mVOM]
+
 	LINQ is a uniform programming model for any kind of data access. LINQ enables you to query and manipulate
       data independently of data sources.
 	Its like a quey language which can query any data source and any transform. LINQ also provides full type
@@ -859,9 +846,39 @@ A preppared developer has more chance of getting success than a unprepared super
 
 	[https://www.youtube.com/watch?v=ZGoXSJPNtGY] Duration[12:48]
 
+	Acronym to remember 'DON'T TELL ANY ONE'
+
+	Select top 1 * from (select top 2 empSalary from order by EmpSalary desc) as mySub
+	order by EmpSal asc
+
 90. Explain RowNumber, Partition, Rank and DesnseRank ?
 
 	[https://www.youtube.com/watch?v=QFj-hZi8MKk] Duration[10:49]
+
+	row_number()
+	Row number function helps you create unique numbers for each result set rows.
+	Example
+	SELECT row_number() over (order by customername) as ordernumber, 
+		CustomerName,
+		ProductName, 
+		Amount, 
+		VendorName 
+	From 
+		Sales
+
+	partition
+	The PARTITION BY clause divides a query's result set into partitions.
+	Example:
+	SELECT row_number() over (order by customername) as ordernumber,
+		 row_number() over (partition by vendorname) as vendornumber, 	 
+		CustomerName,
+		ProductName, 
+		Amount, 
+		VendorName 
+	From 
+		Sales
+
+	
 
 91. What is Garbage Collector ?
 
@@ -876,6 +893,12 @@ A preppared developer has more chance of getting success than a unprepared super
 
 	Attached to the garbage collector there is this concept called generations. And there are three kinds of generations
 	generation 0, generation 1, generation 2
+
+
+	Example to release Com Objects
+
+	 System.Runtime.InteropServices.Marshal.ReleaseComObject(mItm);
+       GC.Collect();
 
 
 92. What is IL Code, CLR, CTS and CAS ?
@@ -932,9 +955,14 @@ A preppared developer has more chance of getting success than a unprepared super
 
 	Dataset
 	Dataset is a disconnected Architecture. In other words Dataset is an inmemory recordset.
+	DataSet is an in-memory representation of a collection of Database objects including related tables, constraints, and relationships among the tables.
+	It provides a consistent relational programming model with multiple data sources from different areas.
 
 	Datareader
 	Datareader is a connected architecture.
+	DataReader is designed to retrieve a read-only, forward-only stream of data from data sources. 
+	DataReader has a connection oriented nature, whenever you want fetch the data from database that you must have a connection.
+	
 
 97. Static vs Singleton
 
@@ -980,4 +1008,5 @@ A preppared developer has more chance of getting success than a unprepared super
 	combined into a single class, when the application is compiled. The partial keyword can 
 	also be used to split a struct or an interface over two or more files.
 
-	
+
+101. A class with Private Constructor creates an instances only once.	
