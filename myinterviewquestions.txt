@@ -1,4 +1,4 @@
-A preppared developer has more chance of getting success than a unprepared super hero.
+A prepared developer has more chance of getting success than a unprepared super hero.
 
 1. What is the difference between Custom control and User Control ?
 
