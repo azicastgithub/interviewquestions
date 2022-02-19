@@ -1010,3 +1010,83 @@ A preppared developer has more chance of getting success than a unprepared super
 
 
 101. A class with Private Constructor creates an instances only once.	
+
+102. What are the differences between Stack and Heap ?
+	
+	Stack
+	It is an array of memory.
+	It is a LIFO (Last In First Out) data structure.
+	In it data can be added to and deleted only from the top of it.
+	Things" declared with the following list of type declarations are Value Types
+	(because they are from System.ValueType):
+	bool, byte, char, decimal, double, enum, float, int, long, sbyte, short, struct, uint, ulong, ushort
+	Memory allocation is Static.
+	It is stored Directly.
+	Variables can’t be Resized.
+	Its access is fast.
+
+	Heap
+	It is an area of memory where chunks are allocated to store certain kinds of data objects.
+	In it data can be stored and removed in any order.
+	"Things" declared with following list of type declarations are Reference Types
+	(and inherit from System.Object... except, of course, for object which is the System.Object object):
+	class, interface, delegate, object, string.
+	Memory allocation is Dynamic.
+	It is stored indirectly.
+	Variables can be Resized.
+	Its access is Slow.
+
+103. C# - Nullable Types
+
+	As you know, a value type cannot be assigned a null value. For example, int i = null will give you a compile time error.
+	C# 2.0 introduced nullable types that allow you to assign null to value type variables. 
+	You can declare nullable types using Nullable<t> where T is a type. 
+
+104. What is the default access type specifier of a class in C#?
+
+	The internal access specifier hides its member variables and methods from other classes and objects, that is resides in other namespace.
+	The variable or classes that are declared with internal can be access by any member within application. 
+	It is the default access specifiers for a class in C# programming.
+	Default access modifier of class is Internal and private for class member.
+
+105. What is a coalescing operator in C# ?
+
+	[https://www.youtube.com/watch?v=YJGGmTNHPeo] Duration[3:57]
+
+	"??" is a NULL coalescing operator. If you see the English meaning of coalescing it says "consolidate together". Coalescing 
+	operator returns the first NON-NULL value from a chain. For example below is a simpe coalescing code which chains four strings
+
+	So if "str1" is null it will try "str2", if "str2" is null it will try "str3" and so on until it finds a string with a non-null value.
+
+	string final=str1 ?? str2 ?? str3 ?? str4;
+
+106. What happens if an object is assign a null value ?
+
+	The null value simply means that the variable does not refer to an object in memory.
+
+
+107. What is a dispose method ?
+	
+	The Dispose method performs all object cleanup, so the garbage collector no longer needs to call the objects' Object. ... Therefore, the call to the SuppressFinalize method prevents the garbage collector from running the finalizer.	
+
+108. What is dispose and finalize ?
+
+109. What will be the output of the following c# code ?
+
+	     var obj1 = new clsStud { Mark = 10 };
+           var obj2 = obj1;
+           obj1.Mark = 20;
+	     Console.WriteLine(obj2.Mark);
+	
+	     It will print 20 as the obj1 is a referance type;
+
+110. What will be the output of the following c# code ?
+
+	     var obj1 = new clsStud { Mark = 10 };
+           var obj2 = obj1;
+           obj1.Mark = null;
+	     Console.WriteLine(obj2.Mark);
+	
+		It will print 10 as the obj1 is assigned null the obj2 will no-longer refers obj1 in memory it will print the previous value 10
+		
+
