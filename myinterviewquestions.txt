@@ -1,5 +1,31 @@
 A prepared developer has more chance of getting success than a unprepared super hero.
 
+Introduction of myself
+
+	My coding career started in 2003. 
+	I was working as a freelance developer at the time. 
+	During this time, I received a request to design a Video Playout application for a local cable TV channel. 
+	Because there were not enough third-party SDKs or components available at the time to construct this Video Playout application, I built it using the native components included in Visual Studio 6 and developed it using Visual Basic 6. 
+	Later in 2008, I transformed the entire project into a dotnet application using C# and winform desgin, and in the process, 
+	I was hired at Soware Innovations Pvt Ltd in Kochi. 
+	And the core business application for Soware back at that time was an MS-Foxpro-based Inventory and Accounts Management tool.
+
+	And I was a member of the Soware team that converted this FOXPRO-based inventory and accounting app into a full-fledged C#-based dotnet Desktop application. 
+	More precisely, I was tasked with creating a security architecture for this inventory and accounting app which is called Infi.
+	To put it another way, my task was specifically to protect this app's exe from modified back to its original C# source code, 
+	and further there must be an anti-piracy method as well as a licencing key mechanism to distinguish each client installation for this software.
+
+
+3 Important Questions to ask at the end of a Job Interview when the interviewer ask 'Do you have any questions to ask us ?' 
+
+	1. How do you see the company evolving over the next five years ?
+
+	2. What could I do in this role to help you achieve your vision ?
+
+	3. What's the culture like within the company ?
+
+Following Technical Questions are asked at a Tech Interview.
+
 1. What is the difference between Custom control and User Control ?
 
 	Create a custom control if you want to make a component where you have 
@@ -1044,6 +1070,9 @@ A prepared developer has more chance of getting success than a unprepared super 
 	C# 2.0 introduced nullable types that allow you to assign null to value type variables. 
 	You can declare nullable types using Nullable<t> where T is a type. 
 
+      A type is said to be nullable if it can be assigned a value or can be assigned null, which means the type has no value whatsoever. 
+	By default, all reference types, such as String, are nullable, but all value types, such as Int32, are not.
+
 104. What is the default access type specifier of a class in C#?
 
 	The internal access specifier hides its member variables and methods from other classes and objects, that is resides in other namespace.
@@ -1095,7 +1124,7 @@ A prepared developer has more chance of getting success than a unprepared super 
 
 	By default if you are specifing a an access modifier when declaring a construtor it will take it as 'Private'
 
-	Inorder to call a method inside a class that has private construtor, then the properties and method should essentially be static.
+	Inorder to call a method inside a class that has private construtor, the properties and methods should essentially be static.
 
       Example
 	class clsPrv
@@ -1111,4 +1140,45 @@ A prepared developer has more chance of getting success than a unprepared super 
         }
       }
 
+	public static void Main()
+	{
+		clsPrv.myFunction();
+	}
+
 112. More on garbage collection.
+
+113. What is Shallow Copy and Deep Copy ?
+
+	Shallow Copy
+	Creating a new object and then copying the value type fields of the current object to the new object. 
+	But when the data is reference type, then the only reference is copied but not the referred object itself. 
+	Therefore the original and clone refer to the same object. 
+	
+	Deep Copy
+	It is a process of creating a new object and then copying the fields of the current object to the newly created object to make a complete copy of the internal reference types. 
+	If the specified field is a value type, then a bit-by-bit copy of the field will be performed. 
+	If the specified field is a reference type, then a new copy of the referred object is performed.
+
+114. What are reference types in c# ?
+
+	The reference types do not contain the actual data stored in a variable, but they contain a reference to the variables.
+	In other words, they refer to a memory location. Using multiple variables, the reference types can refer to a memory location. 
+	If the data in the memory location is changed by one of the variables, the other variable automatically reflects this change in value. 
+	Example of built-in reference types are: object, dynamic, and string.
+
+115. Why to use lock statement in C#?
+
+	In case a multiple threads is executed at-a-time the application may be crashed. 
+	"Lock" does a beautiful job which is "Make to execute one thread at-a-time" remaining will be waiting till that processing thread complete its work.
+
+	Lock will make sure one thread will not intercept the other thread which is running the part of code. 
+	So lock statement will make the thread wait, block till the object is being released
+
+116. What is the Constructor Chaining in C#?
+
+     Constructors are responsible for object initialization and memory allocation of its class. 
+     There is always at least one constructor in every class. 
+     Constructor Chaining is an approach where a constructor calls another constructor in the same or base class. 
+     This means that, every child class constructor is mapped to parent class Constructor implicitly by base keyword so when you create an instance of child class to it'll call parent's class Constructor without it inheritance is not possible.	
+
+117. Can you explain the difference between Interface, abstract class, sealed class, static class and partial class in C#?  
