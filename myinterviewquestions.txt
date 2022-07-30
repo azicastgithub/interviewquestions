@@ -1,21 +1,5 @@
 A prepared developer has more chance of getting success than a unprepared super hero.
 
-Introduction of myself
-
-	My coding career started in 2003. 
-	I was working as a freelance developer at the time. 
-	During this time, I received a request to design a Video Playout application for a local cable TV channel. 
-	Because there were not enough third-party SDKs or components available at the time to construct this Video Playout application, I built it using the native components included in Visual Studio 6 and developed it using Visual Basic 6. 
-	Later in 2008, I transformed the entire project into a dotnet application using C# and winform desgin, and in the process, 
-	I was hired at Soware Innovations Pvt Ltd in Kochi. 
-	And the core business application for Soware back at that time was an MS-Foxpro-based Inventory and Accounts Management tool.
-
-	And I was a member of the Soware team that converted this FOXPRO-based inventory and accounting app into a full-fledged C#-based dotnet Desktop application. 
-	More precisely, I was tasked with creating a security architecture for this inventory and accounting app which is called Infi.
-	To put it another way, my task was specifically to protect this app's exe from modified back to its original C# source code, 
-	and further there must be an anti-piracy method as well as a licencing key mechanism to distinguish each client installation for this software.
-
-
 3 Important Questions to ask at the end of a Job Interview when the interviewer ask 'Do you have any questions to ask us ?' 
 
 	1. How do you see the company evolving over the next five years ?
@@ -385,6 +369,33 @@ Following Technical Questions are asked at a Tech Interview.
 
 33. Authorization and authentication ?
 
+	So, what is the difference between authentication and authorization? Simply put, authentication is the process of verifying who someone is, 
+	whereas authorization is the process of verifying what specific applications, files, and data a user has access to. 
+	The situation is like that of an airline that needs to determine which people can come on board.
+	The first step is to confirm the identity of a passenger to make sure they are who they say they are. 
+	Once a passenger’s identity has been determined, the second step is verifying any special services the passenger has access to, 
+	whether it’s flying first-class or visiting the VIP lounge.
+
+	In the digital world, authentication and authorization accomplish these same goals. 
+	Authentication is used to verify that users really are who they represent themselves to be. 
+	Once this has been confirmed, authorization is then used to grant the user permission to access different levels of information and perform specific functions, 
+	depending on the rules established for different types of users.
+
+	Authentication
+	Authentication verifies who the user is.
+	Authentication works through passwords, one-time pins, biometric information, and other information provided or entered by the user.
+	Authentication is the first step of a good identity and access management process.
+	Authentication is visible to and partially changeable by the user.
+	Example: By verifying their identity, employees can gain access to an HR application that includes their personal pay information, vacation time, and 401K data.
+
+	Authorization
+	Authorization determines what resources a user can access.
+	Authorization works through settings that are implemented and maintained by the organization
+	Authorization always takes place after authentication.
+	Authorization isn’t visible to or changeable by the user.
+	Example: Once their level of access is authorized, 
+	employees and HR managers can access different levels of data based on the permissions set by the organization
+
 34. What is Polymorphism ?
 
 	Polymorphism provides the ability to a class to have multiple implementations with the same name. 
@@ -587,9 +598,25 @@ Following Technical Questions are asked at a Tech Interview.
 
 51. What is Web API ?
 
+	Web API (Application Programming Interface), as the name suggests, 
+	is an API that can be accessed over the Web using the HTTP protocol. 
+	It is basically considered the best platform for revealing or uncovering data and services to various different services. 
+	It is a tool that can be used to push data to a server and can be accessed by server code. 
+	It can be built or developed using various technologies like java, ASP.NET, etc.
+
 	Web API is a framework which helps to create and develop HTTP based restful services.
 
 52. Why is Web API required ?
+
+	Web API is generally considered as a service that basically provides us information or data from the server. 
+	It is very important because of the following reasons:
+
+	It is used to provide an interface for websites and client applications to have access to data.
+	It can also be used to access data from the database and save data back to the database.
+	It supports different text formats such as XML, JSON, etc.
+	It is suitable or compatible with any type of browser and any type of device like mobile, desktop, web, etc.
+	It uses low bandwidth such as XML or JSON data, etc., and is therefore considered good for devices that have limited bandwidth such as smartphones, etc.
+	From a business point of view, web API is more applicable for UI/UX, increases interest in the company’s product and services, increases website traffic.
 
 53. Is it possible to use RESTful services using WCF ?
 
@@ -759,6 +786,10 @@ Following Technical Questions are asked at a Tech Interview.
 	Help you to add new methods to existing types without modifying the original code,inderiting or aggregating.
 
 79. What are Generics in C# ?
+
+	Generic is a class which allows the user to define classes and methods with the placeholder. 
+	Generics were added to version 2.0 of the C# language. 
+	The basic idea behind using Generic is to allow type (Integer, String, … etc and user-defined types) to be a parameter to methods, classes, and interfaces.
 
 	Generic means the general form, not specific. In C#, generic means not specific to a particular data type.
 
@@ -1182,3 +1213,70 @@ Following Technical Questions are asked at a Tech Interview.
      This means that, every child class constructor is mapped to parent class Constructor implicitly by base keyword so when you create an instance of child class to it'll call parent's class Constructor without it inheritance is not possible.	
 
 117. Can you explain the difference between Interface, abstract class, sealed class, static class and partial class in C#?  
+
+118. What is Dependency Injection ? What are its Types ?
+	
+	[https://www.c-sharpcorner.com/blogs/what-is-dependency-injection-and-what-are-its-types2]
+
+	There are 3 types of Dependency Injection.
+
+		Constructor Injection
+		Property Injection
+		Method Injection
+
+119. What are Web API filters?
+
+	Filters are basically used to add extra logic at different levels of Web API framework request processing.  
+	Different types of Web API filters are available as given below:
+
+	Authentication Filter: 
+	It handles authentication and authenticates HTTP requests. 
+	It also helps to authenticate user detail. It checks the identity of the user.
+
+	Authorization Filter: 
+	It handles authorization. 
+	It runs before controller action. 
+	This filter is used to check whether or not a user is authenticated. 
+	If the user is not authenticated, then it returns an HTTP status code 401 without invoking the action.
+	AuthorizeAttribute is a built-in authorization filter provided by Web API.
+
+	Action Filter: 
+	It is attributing that one can apply to controller action or entire controller. 
+	It is used to add extra logic before or after controller action executes. 
+	It is simply a way to add extra functionality to Web API services.
+
+	Exception Filter: 
+	It is used to handle exceptions that are unhandled in Web API. 
+	It is used whenever controller actions throw an unhandled exception that is not HttpResponseException. 
+	It will implement an “IExceptionFilter” interface.
+
+	Override Filter: 
+	It is used to exclude specific action methods or controllers from the global filter or controller level filter. 
+	It is simply used to modify the behavior of other filters for individual action methods. 
+
+120. What do you mean by Caching and What are its types?
+
+	Caching is basically a technique or process of storing data somewhere or in the cache for future requests. 
+	The cache is a temporary storage area. 
+	Caching keeps all frequently or recently accessed files or data in the cache memory and accesses them from the cache itself 
+	rather than actual address of data or files. 
+	The cache interface simply improves the storage mechanism for request/response object pairs that are being cached.
+
+	Advantages of Caching:
+	It is considered the best solution to ensure that data is served where it is needed to be served that too at a high level of efficiency which is best for both client and server.
+	It delivers web objects faster to the end-user.
+	It reduces load time on the website server.
+	It leads to faster execution of any process.
+	It decreases network costs.
+
+	Types of Caching:
+	There are basically three types of caching as given below:
+
+	Page Caching
+	Data Caching
+	Fragment Caching
+
+121. What is the max. columns Number for sql server table?
+
+	The maximum number of column allowed in a SQL server table is 1024 and if you use “sparse column” then this limit is 3000. 
+	But this maximum column limit having some other conditions too.
