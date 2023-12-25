@@ -890,6 +890,26 @@ Following Technical Questions are asked at a Tech Interview.
 
 86. Explain Web API life cycle ?
 
+	The Web API life cycle in C# involves several stages:
+
+	Route Selection: Incoming HTTP requests are mapped to a particular route based on the URL and HTTP method.
+
+	Message Handlers: Global and route-specific message handlers execute before the controller action. They intercept 	requests and responses to perform pre-processing or post-processing tasks.
+
+	Controller Selection: The appropriate controller and action method are selected based on the matched route.
+
+	Action Filters: Action filters are executed before and after the action method execution. They enable cross-cutting concerns such as authentication, logging, and validation.
+
+	Model Binding: The Web API framework binds incoming request data to parameters of the action method based on the request content (JSON, XML, form data, etc.).
+
+	Action Execution: The selected action method is invoked to process the request and generate the response.
+
+	Result Execution: The action method returns a result, which is executed to generate an HTTP response (e.g., JSON, XML, status code).
+
+	Response Formatters: The response is formatted based on the client's request (content negotiation) and returned to the client.
+
+	Each stage in the Web API life cycle plays a specific role in handling incoming requests, executing controller logic, and generating responses, allowing for flexibility and customization at various points in the request-handling process.
+
 87. What are some HTTP words ?
 
 	'GET', 'POST', 'PUT' and 'DELETE'
